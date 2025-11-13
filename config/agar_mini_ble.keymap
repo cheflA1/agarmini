@@ -7,7 +7,6 @@
 #include "./boards/shields/klink_kbd/common.keymap"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     keymap {
@@ -15,28 +14,28 @@
 
         default_layer {
             bindings = <
-&gresc     &kp Q      &kp W     &kp E  &kp R        &kp T  &kp Y      &kp U  &kp I      &kp O           &kp P                &mt LGUI BACKSLASH  &kp BSPC
-&lt 2 TAB  &kp A      &kp S     &kp D  &kp F        &kp G  &kp H      &kp J  &kp K      &kp L           &kp SEMI             &kp RET
-&kp LSHFT  &kp Z      &kp X     &kp C  &kp V        &kp B  &kp N      &kp M  &kp COMMA  &kp DOT         &mt RSHIFT UP_ARROW  &lt 3 RIGHT_ARROW
-           &kp LCTRL  &kp LALT         &lt 1 SPACE         &kp SPACE                    &kp LEFT_ARROW  &kp DOWN_ARROW
+&gresc     &kp Q      &kp W     &kp E  &kp R            &kp T  &kp Y        &kp U  &kp I      &kp O          &kp P              &mt LGUI BACKSLASH  &kp BSPC
+&lt 2 TAB  &kp A      &kp S     &kp D  &kp F            &kp G  &kp H        &kp J  &kp K      &kp L          &kp SEMI           &kp RET
+&kp LSHFT  &kp Z      &kp X     &kp C  &kp V            &kp B  &kp N        &kp M  &kp COMMA  &kp DOT        &kp RIGHT_SHIFT    &kp LEFT_GUI
+           &kp LCTRL  &kp LALT         &lt 2 BACKSPACE         &lt 1 SPACE                    &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
         layer1 {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3          &kp N4          &kp N5           &kp N6            &kp N7             &kp N8  &kp N9     &kp N0            &kp MINUS  &kp EQUAL
-&trans     &trans  &trans  &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans     &kp SINGLE_QUOTE  &trans
-&trans     &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans            &trans             &trans  &kp SLASH  &trans            &trans
-           &trans  &trans                  &trans                           &trans                                       &trans     &trans
+&kp GRAVE  &kp N1  &kp N2       &kp N3        &kp N4         &kp N5  &kp N6            &kp N7             &kp N8  &kp N9     &kp N0            &kp MINUS  &kp EQUAL
+&trans     &trans  &trans       &trans        &trans         &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans     &kp SINGLE_QUOTE  &trans
+&trans     &trans  &mt K_CUT X  &mt K_COPY C  &mt K_PASTE V  &trans  &trans            &trans             &trans  &kp SLASH  &trans            &trans
+           &trans  &trans                     &trans                 &trans                                       &trans     &trans
             >;
         };
 
         layer2 {
             bindings = <
-&kp CAPSLOCK  &kp PRINTSCREEN  &kp PAGE_UP     &kp HOME  &kp F2     &trans  &trans  &trans  &kp INSERT  &trans    &trans     &trans  &trans
-&trans        &kp DELETE       &kp PAGE_DOWN   &kp END   &kp F2     &trans  &trans  &trans  &trans      &trans    &trans     &trans
-&trans        &kp PAUSE_BREAK  &kp SCROLLLOCK  &kp F4    &kp LG(V)  &trans  &trans  &trans  &trans      &kp RGUI  &trans     &trans
-              &trans           &trans                    &trans             &trans                      &kp RALT  &kp RCTRL
+&trans  &kp HOME        &kp UP_ARROW    &kp END          &kp F2  &trans  &trans  &trans  &trans  &trans    &kp PRINTSCREEN  &trans  &kp DELETE
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F5  &trans  &trans  &trans  &trans  &trans    &trans           &trans
+&trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans  &trans    &kp RIGHT_SHIFT  &trans
+        &trans          &trans                           &trans          &trans                  &kp RALT  &kp RCTRL
             >;
         };
 
