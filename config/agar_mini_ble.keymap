@@ -16,19 +16,19 @@
 
         default_layer {
             bindings = <
-&gresc     &kp Q      &kp W     &kp E  &kp R            &kp T  &kp Y        &kp U  &kp I      &kp O          &kp P              &mt LGUI BACKSLASH  &kp BSPC
-&lt 2 TAB  &kp A      &kp S     &kp D  &kp F            &kp G  &kp H        &kp J  &kp K      &kp L          &kp SEMI           &kp RET
-&kp LSHFT  &kp Z      &kp X     &kp C  &kp V            &kp B  &kp N        &kp M  &kp COMMA  &kp DOT        &kp RIGHT_SHIFT    &kp LEFT_GUI
-           &kp LCTRL  &kp LALT         &lt 2 BACKSPACE         &lt 1 SPACE                    &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&gresc     &kp Q      &kp W        &kp E         &kp R            &kp T  &kp Y        &kp U  &kp I      &kp O          &kp P              &mt LGUI BACKSLASH  &kp BSPC
+&lt 2 TAB  &kp A      &kp S        &kp D         &kp F            &kp G  &kp H        &kp J  &kp K      &kp L          &kp SEMI           &kp RET
+&kp LSHFT  &kp Z      &mt K_CUT X  &mt K_COPY C  &mt K_PASTE V    &kp B  &kp N        &kp M  &kp COMMA  &kp DOT        &kp RIGHT_SHIFT    &kp LEFT_GUI
+           &kp LCTRL  &kp LALT                   &lt 2 BACKSPACE         &lt 1 SPACE                    &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
         layer1 {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2       &kp N3        &kp N4         &kp N5  &kp N6            &kp N7             &kp N8  &kp N9     &kp N0            &kp MINUS  &kp EQUAL
-&trans     &trans  &trans       &trans        &trans         &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans     &kp SINGLE_QUOTE  &trans
-&trans     &trans  &mt K_CUT X  &mt K_COPY C  &mt K_PASTE V  &trans  &trans            &trans             &trans  &kp SLASH  &trans            &trans
-           &trans  &trans                     &trans                 &trans                                       &trans     &trans
+&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6            &kp N7             &kp N8  &kp N9     &kp N0            &kp MINUS  &kp EQUAL
+&trans     &trans  &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans     &kp SINGLE_QUOTE  &trans
+&trans     &trans  &trans  &trans  &trans  &trans  &trans            &trans             &trans  &kp SLASH  &trans            &trans
+           &trans  &trans          &trans          &trans                                       &trans     &trans
             >;
         };
 
@@ -36,7 +36,7 @@
             bindings = <
 &trans  &kp HOME        &kp UP_ARROW    &kp END          &kp F2  &trans  &trans  &trans  &trans  &trans    &kp PRINTSCREEN  &trans  &kp DELETE
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F5  &trans  &trans  &trans  &trans  &trans    &trans           &trans
-&trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans  &trans    &kp RIGHT_SHIFT  &trans
+&trans  &trans          &trans          &trans           &trans  &trans  &trans  &trans  &trans  &trans    &kp RIGHT_SHIFT  &mo 3
         &trans          &trans                           &trans          &trans                  &kp RALT  &kp RCTRL
             >;
         };
