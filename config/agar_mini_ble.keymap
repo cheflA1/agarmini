@@ -8,6 +8,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
+&lt { tapping-term-ms = <500>; };
+
 / {
     keymap {
         compatible = "zmk,keymap";
