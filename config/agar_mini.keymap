@@ -9,12 +9,12 @@
 #include <dt-bindings/zmk/keys.h>
 
 &lt {
-    tapping-term-ms = <500>;
+    tapping-term-ms = <350>;
     flavor = "tap-preferred";
 };
 
 &mt {
-    tapping-term-ms = <500>;
+    tapping-term-ms = <350>;
     flavor = "tap-preferred";
 };
 
